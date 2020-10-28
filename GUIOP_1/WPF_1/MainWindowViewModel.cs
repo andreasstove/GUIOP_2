@@ -10,7 +10,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using GUIOP_1.View;
 using Prism.Mvvm;
-
+using System.Windows.Controls;
 
 namespace WPF_1
 {
@@ -39,6 +39,10 @@ namespace WPF_1
             get
             {
                 return depters;
+            }
+            set
+            {
+                SetProperty(ref depters, value);
             }
         }
 
