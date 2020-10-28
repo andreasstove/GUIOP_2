@@ -38,11 +38,13 @@ namespace WPF_1
         private void BtnGem_Click(object sender, RoutedEventArgs e)
         {
             var gem = DataContext as MainWindowViewModel;
+
             gem.AddNewDepter();
             txtB_Name.Focus();
             var win1 = new MainWindow();
             //win1.ListBoxForDepters
             win1.ListBoxForDepters.SelectedIndex = win1.ListBoxForDepters.Items.Count - 1;
+            //DialogResult = true;
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
