@@ -34,6 +34,9 @@ namespace WPF_1
 
             }
         }
+
+        #region Properties
+
         public ObservableCollection<Depter> Depters
         {
             get
@@ -45,6 +48,8 @@ namespace WPF_1
                 SetProperty(ref depters, value);
             }
         }
+
+        #endregion
 
 
         #region Methods
