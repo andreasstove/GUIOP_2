@@ -20,11 +20,12 @@ namespace WPF_1
         public MainWindowViewModel()
         {
             depters = new ObservableCollection<Depter>();
-            #if DEBUG
+            //#if DEBUG
             depters.Add(new Depter("Thomas", 111));
-#endif
+            //#endif
             depters.Add(new Depter("Andreas", -20));
-            CurrentDepter = null;
+            CurrentDepter = depters[0];
+            //CurrentDepter = null;
 
         }
 
