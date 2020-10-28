@@ -15,7 +15,7 @@
             <RowDefinition Height="87*"/>
             <RowDefinition Height="335*"/>
         </Grid.RowDefinitions>
-        <Button Content="Gem" HorizontalAlignment="Left" Margin="59,249,-64,0" VerticalAlignment="Top" Width="59" Grid.Row="1" Click="BtnGem_Click"/>
+        <Button Content="Gem" HorizontalAlignment="Left"  Margin="59,249,-64,0" VerticalAlignment="Top" Width="59" Grid.Row="1" Click="BtnGem_Click"/>
         <Button Content="Annulere" HorizontalAlignment="Left" Margin="345,243,-354,0" VerticalAlignment="Top" Width="63" Grid.Row="1" Click="BtnAnnulere_Click"/>
         <Label Content="Add depter"  HorizontalAlignment="Left" Margin="59,30,-127.333,0" VerticalAlignment="Top" Width="100"/>
         
