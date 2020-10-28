@@ -6,10 +6,10 @@
     <Application.Resources>
         <DataTemplate x:Key="deptersTemplate">
             <WrapPanel>
-                <TextBlock  Text="{Binding Path=depterName}" Padding="5, 0"
+                <TextBlock  Text="{Binding Path=DepterName}" Padding="5, 0"
                            Width="100"
                         />
-                <TextBlock  Text="{Binding Path=amount}" Padding="5, 0"
+                <TextBlock  Text="{Binding Path=Amount}" Padding="5, 0"
                            Width="100"
                         />
             </WrapPanel>

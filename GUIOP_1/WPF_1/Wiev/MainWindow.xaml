@@ -20,7 +20,8 @@
             SelectedIndex="{Binding Path=CurrentIndex}"
 
             IsSynchronizedWithCurrentItem="True"
-            ItemTemplate="{StaticResource deptersTemplate}"
+            DisplayMemberPath="DepterName"
+
             HorizontalAlignment="Left" 
             Height="278" 
             Margin="35,57,6,6" 
