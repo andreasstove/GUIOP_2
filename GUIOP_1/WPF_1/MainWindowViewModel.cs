@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using GUIOP_1.View;
+
 using Prism.Mvvm;
 using System.Windows.Controls;
 
@@ -20,8 +20,12 @@ namespace WPF_1
 
         public MainWindowViewModel()
         {
-            depters = new ObservableCollection<Depter>();
-            //currentDepter = depters[0];
+            depters = new ObservableCollection<Depter>
+            {
+                new Depter("Thomas",100),
+                new Depter("Andrdas", 90)
+            };
+            currentDepter = depters[0];
         }
 
         public Depter CurrentDepter

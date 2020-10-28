@@ -11,8 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using WPF_1;
-namespace GUIOP_1.View
+
+
+namespace WPF_1
 {
     /// <summary>
     /// Interaction logic for AddCollecter.xaml

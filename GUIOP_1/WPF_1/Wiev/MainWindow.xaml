@@ -10,13 +10,11 @@
         <local:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        
-
         <Label Content="Label" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="695,14,0,0" VerticalAlignment="Top"/>
         <Button Content="Add" Click="btn_add_click" HorizontalAlignment="Left" Margin="490,136,0,0" VerticalAlignment="Top" Width="74"/>
         <ListBox 
-            x:Name="ListBoxForDepters"  ItemsSource="{Binding Depters}"    
+            x:Name="ListBoxForDepters" ItemsSource="{Binding Depters}" 
         HorizontalAlignment="Left" Height="278" Margin="35,57,0,0" VerticalAlignment="Top" Width="280"/>
 
     </Grid>
