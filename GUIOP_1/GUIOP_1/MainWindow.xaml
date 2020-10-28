@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Add debt" HorizontalAlignment="Left" Margin="540,30,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <DataGrid HorizontalAlignment="Left" Height="360" Margin="30,30,0,0" VerticalAlignment="Top" Width="430"/>
+        <Label Content="Debtrs" HorizontalAlignment="Left" Margin="30,4,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
