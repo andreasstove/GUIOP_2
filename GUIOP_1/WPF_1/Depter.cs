@@ -9,8 +9,8 @@ namespace WPF_1
     public class Depter
     {
         string depterName;
-        string amount;
-        public Depter(string aDepterName, string aAmount)
+        double amount;
+        public Depter(string aDepterName, double aAmount)
         {
             depterName = aDepterName;
             amount = aAmount;
@@ -27,7 +27,7 @@ namespace WPF_1
             }
         }
 
-        public string Amount
+        public double Amount
         {
             get
             {

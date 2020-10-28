@@ -7,6 +7,8 @@ using Prism.Commands;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
+
+
 namespace WPF_1
 {
     public class MainWindowViewModel : INotifyPropertyChanged
