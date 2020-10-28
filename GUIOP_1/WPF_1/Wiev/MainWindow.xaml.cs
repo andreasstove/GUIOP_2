@@ -30,5 +30,10 @@ namespace WPF_1
             var win2 = new AddCollecter();
             win2.Show();
         }
+
+        private void ListBoxForDepters_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

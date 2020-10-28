@@ -8,7 +8,6 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-
 using Prism.Mvvm;
 using System.Windows.Controls;
 
@@ -20,25 +19,23 @@ namespace WPF_1
 
         public MainWindowViewModel()
         {
-            depters = new ObservableCollection<Depter>
-            {
-                new Depter("Thomas",100),
-                new Depter("Andrdas", 90)
-            };
-            currentDepter = depters[0];
+            depters = new ObservableCollection<Depter>();
+            depters.Add(new Depter("Thomas", 111));
+            CurrentDepter = depters[0];
         }
 
+
+        #region Properties
+        Depter currentDepter = null;
         public Depter CurrentDepter
         {
             get { return currentDepter; }
 
             set
             {
-
+                SetProperty(ref currentDepter, value);
             }
         }
-        #region Properties
-        Depter currentDepter = null;
         public ObservableCollection<Depter> Depters
         {
             get
@@ -64,7 +61,7 @@ namespace WPF_1
         public void AddNewDepter()
         {
             depters.Add(new Depter());
-            CurrentIndex = Depters.Count - 1;
+
         }
         #endregion
 
@@ -87,6 +84,7 @@ namespace WPF_1
                 return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
                  {
                      Depters.Add(new Depter());
+                     CurrentIndex = Depters.Count - 1;
 
                  }));
                 
