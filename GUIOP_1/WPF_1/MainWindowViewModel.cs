@@ -23,7 +23,6 @@ namespace WPF_1
             depters = new ObservableCollection<Depter>();
             currentDepter = depters[0];
         }
-        Depter currentDepter = null;
 
         public Depter CurrentDepter
         {
@@ -34,9 +33,8 @@ namespace WPF_1
 
             }
         }
-
         #region Properties
-
+        Depter currentDepter = null;
         public ObservableCollection<Depter> Depters
         {
             get
@@ -49,6 +47,12 @@ namespace WPF_1
             }
         }
 
+        int currentIndex = -1;
+        public int CurrentIndex
+        {
+            get { return currentIndex; }
+            set => SetProperty(ref currentIndex, value: value);
+        }
         #endregion
 
 
@@ -56,6 +60,7 @@ namespace WPF_1
         public void AddNewDepter()
         {
             depters.Add(new Depter());
+            CurrentIndex = Depters.Count - 1;
         }
         #endregion
 

@@ -38,6 +38,7 @@ namespace GUIOP_1.View
         {
             var gem = DataContext as MainWindowViewModel;
             gem.AddNewDepter();
+
         }
     }
 }
