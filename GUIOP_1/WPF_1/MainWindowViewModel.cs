@@ -21,7 +21,7 @@ namespace WPF_1
         public MainWindowViewModel()
         {
             depters = new ObservableCollection<Depter>();
-            currentDepter = depters[0];
+            //currentDepter = depters[0];
         }
 
         public Depter CurrentDepter
