@@ -20,8 +20,12 @@ namespace WPF_1
         public MainWindowViewModel()
         {
             depters = new ObservableCollection<Depter>();
+            #if DEBUG
             depters.Add(new Depter("Thomas", 111));
-            CurrentDepter = depters[0];
+            #endif
+            
+            CurrentDepter = null;
+
         }
 
 
@@ -84,7 +88,7 @@ namespace WPF_1
                 return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
                  {
                      Depters.Add(new Depter());
-                     CurrentIndex = Depters.Count - 1;
+
 
                  }));
                 
