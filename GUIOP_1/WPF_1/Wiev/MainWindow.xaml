@@ -9,12 +9,14 @@
     <Grid>
         <DataGrid 
             ItemsSource="{Binding Path=Depters}"
+            x:Name="DataGrid"
             
             IsSynchronizedWithCurrentItem="True"
             HorizontalAlignment="Left" Height="340" Margin="35,40,0,0" VerticalAlignment="Top" Width="325"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="695,14,0,0" VerticalAlignment="Top"/>
         <Button Content="Add" Click="btn_add_click" HorizontalAlignment="Left" Margin="490,136,0,0" VerticalAlignment="Top" Width="74"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="430,265,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
