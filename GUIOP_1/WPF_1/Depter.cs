@@ -9,12 +9,12 @@ namespace WPF_1
     public class Depter : BindableBase
     {
         string depterName;
-        string amount;
+        double amount;
         public Depter()
         {
 
         }
-        public Depter(string aDepterName, string aAmount)
+        public Depter(string aDepterName, double aAmount)
         {
             depterName = aDepterName;
             amount = aAmount;
