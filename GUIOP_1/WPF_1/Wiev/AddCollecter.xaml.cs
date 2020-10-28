@@ -40,5 +40,10 @@ namespace WPF_1
             var gem = DataContext as MainWindowViewModel;
             gem.AddNewDepter();
         }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
