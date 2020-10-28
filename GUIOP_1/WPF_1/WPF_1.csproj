@@ -84,6 +84,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Depter.cs" />
+    <Compile Include="DepterViewModel.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Wiev\AddCollecter.xaml.cs">
       <DependentUpon>AddCollecter.xaml</DependentUpon>

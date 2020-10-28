@@ -23,7 +23,9 @@ namespace WPF_1
         public AddCollecter()
         {
             InitializeComponent();
+
         }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -32,7 +34,7 @@ namespace WPF_1
 
         private void BtnAnnulere_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void BtnGem_Click(object sender, RoutedEventArgs e)
@@ -45,11 +47,16 @@ namespace WPF_1
             //win1.ListBoxForDepters
             win1.ListBoxForDepters.SelectedIndex = win1.ListBoxForDepters.Items.Count - 1;
             //DialogResult = true;
+            /*if ()
+                this.Close();
+                */
+           
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
+
     }
 }

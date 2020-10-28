@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Prism.Mvvm;
 namespace WPF_1
 {
-    public class Depter : BindableBase
+    public class Depter
     {
         string depterName;
         double amount;

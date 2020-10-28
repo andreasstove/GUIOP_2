@@ -16,16 +16,15 @@ namespace WPF_1
     public class MainWindowViewModel : BindableBase
     {
         public ObservableCollection<Depter> depters;
-
+         
         public MainWindowViewModel()
         {
-            depters = new ObservableCollection<Depter>();
-            //#if DEBUG
-            depters.Add(new Depter("Thomas", 111));
-            //#endif
-            depters.Add(new Depter("Andreas", -20));
-            CurrentDepter = depters[0];
-            //CurrentDepter = null;
+            depters = new ObservableCollection<Depter>
+            {
+                new Depter("Thomas", 100),
+                new Depter("Andreas", 30)
+            };
+            CurrentDepter = null;
 
         }
 
@@ -95,8 +94,16 @@ namespace WPF_1
             {
                 return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
                  {
-                     Depters.Add(new Depter("Lasse",31));
+                     var newDepter = new Depter("Lasse", 22);
+
+                     
                      CurrentIndex = Depters.Count - 1;
+                     var vm = new DepterViewModel(newDepter);
+                     var win = new AddCollecter
+                     {
+                         DataContext = vm
+                     };
+                     Depters.Add(newDepter);
                  }));
                 
             }

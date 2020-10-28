@@ -9,6 +9,15 @@
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
+    <DockPanel Name="dockPanelMain">
+        <Menu DockPanel.Dock="Top" Name="mainMenu">
+            <MenuItem Header="_File" >
+                <MenuItem Header="Gem" Command="{Binding AddNewDepterCommand}">
+                    
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+ 
     <Grid>
         <Label Content="Depters" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="695,14,0,0" VerticalAlignment="Top"/>
@@ -27,4 +36,5 @@
             Width="280"/>
 
     </Grid>
+    </DockPanel>
 </Window>
