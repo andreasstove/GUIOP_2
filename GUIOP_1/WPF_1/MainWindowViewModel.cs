@@ -66,9 +66,13 @@ namespace WPF_1
         #region Methods
         public void AddNewDepter()
         {
-            depters.Add(new Depter());
+            var newDepter = new Depter();
+            depters.Add(newDepter);
+            currentDepter = newDepter;
 
         }
+
+   
         #endregion
 
         #region INotifyPropertyChanged implementation
@@ -89,7 +93,7 @@ namespace WPF_1
             {
                 return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
                  {
-                     Depters.Add(new Depter());
+                     Depters.Add(new Depter("Lasse",31));
                      CurrentIndex = Depters.Count - 1;
                  }));
                 
