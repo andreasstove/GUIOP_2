@@ -31,6 +31,7 @@ namespace WPF_1
 
 
         #region Properties
+
         Depter currentDepter = null;
         public Depter CurrentDepter
         {
@@ -47,12 +48,13 @@ namespace WPF_1
             {
                 return depters;
             }
-            /*set
+            set
             {
                 SetProperty(ref depters, value);
             }
-            */
+            
         }
+ 
 
         int currentIndex = -1;
         public int CurrentIndex
