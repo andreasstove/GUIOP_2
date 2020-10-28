@@ -32,7 +32,7 @@ namespace WPF_1
 
         private void BtnAnnulere_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
         }
 
         private void BtnGem_Click(object sender, RoutedEventArgs e)
