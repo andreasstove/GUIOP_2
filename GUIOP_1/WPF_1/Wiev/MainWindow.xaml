@@ -23,7 +23,7 @@
             
             HorizontalAlignment="Left" 
             Height="278" 
-            Margin="35,57,6,6" 
+            Margin="33,57,0,0" 
             VerticalAlignment="Top" 
             Width="280"/>
         
