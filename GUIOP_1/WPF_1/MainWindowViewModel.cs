@@ -15,7 +15,7 @@ namespace WPF_1
 {
     public class MainWindowViewModel : BindableBase
     {
-        ObservableCollection<Depter> depters;
+        public ObservableCollection<Depter> depters;
 
         public MainWindowViewModel()
         {
@@ -47,10 +47,11 @@ namespace WPF_1
             {
                 return depters;
             }
-            set
+            /*set
             {
                 SetProperty(ref depters, value);
             }
+            */
         }
 
         int currentIndex = -1;
@@ -89,8 +90,7 @@ namespace WPF_1
                 return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
                  {
                      Depters.Add(new Depter());
-
-
+                     CurrentIndex = Depters.Count - 1;
                  }));
                 
             }
