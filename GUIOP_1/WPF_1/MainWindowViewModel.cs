@@ -7,7 +7,9 @@ using Prism.Commands;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
-
+using System.Windows.Input;
+using GUIOP_1.View;
+using Prism.Mvvm;
 
 namespace WPF_1
 {
@@ -54,6 +56,13 @@ namespace WPF_1
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
+
+        #region ICommand 
+
+        private ICommand command;
+            
+
         #endregion
 
 

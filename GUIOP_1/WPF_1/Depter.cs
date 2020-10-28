@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Prism.Mvvm;
 namespace WPF_1
 {
-    public class Depter
+    public class Depter : BindableBase
     {
         string depterName;
-        double amount;
-        public Depter(string aDepterName, double aAmount)
+        string amount;
+        public Depter()
+        {
+
+        }
+        public Depter(string aDepterName, string aAmount)
         {
             depterName = aDepterName;
             amount = aAmount;
