@@ -33,7 +33,7 @@ namespace WPF_1
 
         private void ListBoxForDepters_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ListBoxForDepters.Focus();
+            //ListBoxForDepters.Focus();
         }
     }
 }
