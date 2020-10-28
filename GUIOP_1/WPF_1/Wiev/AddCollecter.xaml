@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:GUIOP_1.View"
         mc:Ignorable="d"
         Title="AddCollecter" Height="450" Width="448.333">
-    <Grid Margin="0,0,410.333,-0.333">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="665,330,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="59,336,-59,0" VerticalAlignment="Top" Width="31"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="345,330,-345,0" VerticalAlignment="Top" Width="31"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="59,30,-128,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,34,-190,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="31" RenderTransformOrigin="-4.871,-2.391"/>
+    <Grid Margin="0,0,388,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="335*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Gem" HorizontalAlignment="Left" Margin="59,249,-64,0" VerticalAlignment="Top" Width="59" Grid.Row="1" Click="BtnGem_Click"/>
+        <Button Content="Annulere" HorizontalAlignment="Left" Margin="345,243,-354,0" VerticalAlignment="Top" Width="63" Grid.Row="1" Click="BtnAnnulere_Click"/>
+        <Label Content="Add depter"  HorizontalAlignment="Left" Margin="59,30,-127.333,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="txtB_Name" Text="{Binding Path=CurrentDepter.Name}" HorizontalAlignment="Left" Height="23" Margin="59,2,-206.333,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Navn" HorizontalAlignment="Left" Margin="0,2,0,0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Width="44"/>
+        <Label Content="Beløb" HorizontalAlignment="Left" Margin="0,64,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding Path=CurrentDepter.Amount}" Height="23" Margin="59,68,-184,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+
 
     </Grid>
 </Window>

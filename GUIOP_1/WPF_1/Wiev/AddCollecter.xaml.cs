@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using WPF_1;
 namespace GUIOP_1.View
 {
     /// <summary>
@@ -22,6 +22,22 @@ namespace GUIOP_1.View
         public AddCollecter()
         {
             InitializeComponent();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void BtnAnnulere_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnGem_Click(object sender, RoutedEventArgs e)
+        {
+            var gem = DataContext as MainWindowViewModel;
+            gem.AddNewDepter();
         }
     }
 }

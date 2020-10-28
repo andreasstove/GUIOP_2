@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using GUIOP_1.View;
 namespace WPF_1
 {
     /// <summary>
@@ -23,6 +23,12 @@ namespace WPF_1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_add_click(object sender, RoutedEventArgs e)
+        {
+            var win2 = new AddCollecter();
+            win2.Show();
         }
     }
 }
