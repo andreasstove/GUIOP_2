@@ -22,8 +22,8 @@ namespace WPF_1
             depters = new ObservableCollection<Depter>();
             #if DEBUG
             depters.Add(new Depter("Thomas", 111));
-            #endif
-            
+#endif
+            depters.Add(new Depter("Andreas", -20));
             CurrentDepter = null;
 
         }
