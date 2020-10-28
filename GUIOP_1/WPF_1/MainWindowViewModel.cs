@@ -11,9 +11,10 @@ using System.Windows.Input;
 using GUIOP_1.View;
 using Prism.Mvvm;
 
+
 namespace WPF_1
 {
-    public class MainWindowViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : BindableBase
     {
         ObservableCollection<Depter> depters;
 
@@ -60,7 +61,19 @@ namespace WPF_1
 
         #region ICommand 
 
-        private ICommand command;
+        ICommand _newDepterCommand;
+        public ICommand AddNewDepterCommand
+        {
+            get
+            {
+                return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
+                 {
+                     Depters.Add(new Depter());
+
+                 }));
+                
+            }
+        }
             
 
         #endregion
