@@ -18,6 +18,7 @@
             ItemsSource="{Binding Path=Depters}"
             SelectedItem="{Binding Path=CurrentDepter}"
             SelectedIndex="{Binding Path=CurrentIndex}"
+            
             IsSynchronizedWithCurrentItem="True"
             ItemTemplate="{StaticResource deptersTemplate}"
             HorizontalAlignment="Left" 
