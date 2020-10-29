@@ -23,9 +23,10 @@ namespace WPF_1
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
-        private void btn_add_click(object sender, RoutedEventArgs e)
+        private void Btn_add_click(object sender, RoutedEventArgs e)
         {
             var win2 = new AddCollecter();
             win2.Show();
