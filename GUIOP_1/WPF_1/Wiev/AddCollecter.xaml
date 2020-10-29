@@ -6,9 +6,7 @@
         xmlns:local="clr-namespace:WPF_1"
         mc:Ignorable="d"
         Title="AddCollecter" Height="450" Width="448.333">
-    <Window.DataContext>
-        <local:MainWindowViewModel/>
-    </Window.DataContext>
+   
     
     <Grid Margin="0,0,388,0">
         <Grid.RowDefinitions>

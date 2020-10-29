@@ -40,17 +40,11 @@ namespace WPF_1
         private void BtnGem_Click(object sender, RoutedEventArgs e)
         {
  
-            var gem = DataContext as MainWindowViewModel;
-
-            gem.AddNewDepter();
-            MainWindow win1 = new MainWindow();
-            //win1.ListBoxForDepters
-            win1.ListBoxForDepters.SelectedIndex = win1.ListBoxForDepters.Items.Count + 1;
-            //DialogResult = true;
+        
+            DialogResult = true;
             /*if ()
                 this.Close();
                 */
-            System.Diagnostics.Debug.WriteLine(win1.ListBoxForDepters.SelectedItems[0].ToString());
            
         }
 
