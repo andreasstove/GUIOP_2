@@ -152,7 +152,7 @@ namespace WPF_1
         }
         private void SaveAsCommand_Execute()
         {
-            var dialog = new SaveFileDialog();
+            SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "Depter documens|*.agn|ALL Fles|*.*";
             if(filePath == "")
             {
