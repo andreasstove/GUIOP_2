@@ -12,17 +12,19 @@
     <DockPanel Name="dockPanelMain">
         <Menu DockPanel.Dock="Top" Name="mainMenu">
             <MenuItem Header="_File" >
-                <MenuItem Header="Gem" Command="{Binding AddNewDepterCommand}">
-                    
-                </MenuItem>
+                <MenuItem Header="Save As" Command="{Binding SaveAsCommand}" />
+                <MenuItem Header="Save" Command="{Binding SaveCommand}"/>
+                <MenuItem Header="Open" Command="{Binding OpenFileCommand}" />
+
+
             </MenuItem>
         </Menu>
- 
-    <Grid>
-        <Label Content="Depters" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="695,14,0,0" VerticalAlignment="Top"/>
-        <Button Content="Add" Click="Btn_add_click" HorizontalAlignment="Left" Margin="490,136,0,0" VerticalAlignment="Top" Width="74"/>
-        <ListBox 
+
+        <Grid>
+            <Label Content="Depters" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Top"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="695,14,0,0" VerticalAlignment="Top"/>
+            <Button Content="Add" Command="{Binding Path=AddNewDepterCommand}" HorizontalAlignment="Left" Margin="490,136,0,0" VerticalAlignment="Top" Width="74"/>
+            <ListBox 
             Name="ListBoxForDepters" 
             ItemsSource="{Binding Path=Depters}"
             SelectedItem="{Binding Path=CurrentDepter}"
@@ -34,7 +36,8 @@
             Margin="35,57,6,6" 
             VerticalAlignment="Top" 
             Width="280"/>
+            <Button Content="Edit" HorizontalAlignment="Left" Margin="607,136,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
 
-    </Grid>
+        </Grid>
     </DockPanel>
 </Window>

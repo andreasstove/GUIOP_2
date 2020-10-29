@@ -71,11 +71,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Wiev\AddCollecter.xaml">
+    <Page Include="wiev\AddCollecter.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Wiev\MainWindow.xaml">
+    <Page Include="wiev\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -86,10 +86,11 @@
     <Compile Include="Depter.cs" />
     <Compile Include="DepterViewModel.cs" />
     <Compile Include="MainWindowViewModel.cs" />
-    <Compile Include="Wiev\AddCollecter.xaml.cs">
+    <Compile Include="Repository.cs" />
+    <Compile Include="wiev\AddCollecter.xaml.cs">
       <DependentUpon>AddCollecter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wiev\MainWindow.xaml.cs">
+    <Compile Include="wiev\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>

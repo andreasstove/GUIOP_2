@@ -26,17 +26,6 @@ namespace WPF_1
 
         }
 
-        private void Btn_add_click(object sender, RoutedEventArgs e)
-        {
-            var win2 = new AddCollecter();
-            var depter = new Depter();
-            var vm = new DepterViewModel(depter);
-            win2.DataContext = vm;
-            win2.ShowDialog();
-            var vm2 = this.DataContext as MainWindowViewModel;
-            vm2.depters.Add(depter);
-        }
-
         private void ListBoxForDepters_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //ListBoxForDepters.Focus();
