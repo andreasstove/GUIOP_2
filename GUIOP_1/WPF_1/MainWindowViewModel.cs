@@ -96,13 +96,29 @@ namespace WPF_1
 
         #region ICommand 
 
+        ICommand _deleteDepterCommand;
+
+        public ICommand DeleteDepterCommand
+        {
+            get
+            {
+                return _deleteDepterCommand ?? (_deleteDepterCommand = new DelegateCommand(() =>
+                {
+                    Depters.Remove(CurrentDepter);
+                    CurrentDepter = null;
+                }));
+            }
+
+        }
+
+
         ICommand _newDepterCommand;
         public ICommand AddNewDepterCommand
         {
             get
             {
                 return _newDepterCommand ?? (_newDepterCommand = new DelegateCommand(() =>
-                 {
+                {
                      var newDepter = new Depter();
                      var vm = new DepterViewModel(newDepter);
                      var dlg = new AddCollecter();
