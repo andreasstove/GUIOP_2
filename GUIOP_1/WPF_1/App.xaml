@@ -18,7 +18,7 @@
         <Style x:Key="BottonStyle" TargetType="{x:Type Button}">
             <Style.Setters>
                 <Setter Property="FontFamily" Value="Courier New" />
-                <Setter Property="Foreground" Value="Chocolate" />
+                <Setter Property="Foreground" Value="ForestGreen" />
             </Style.Setters>
             <Style.Triggers>
                 <Trigger Property="Button.IsMouseOver" Value="True">

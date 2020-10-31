@@ -24,7 +24,7 @@
         <Grid>
             <Label Content="Depters" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Top"/>
             <Label Content="Label" HorizontalAlignment="Left" Margin="695,14,0,0" VerticalAlignment="Top"/>
-            <Button Content="Add" Command="{Binding Path=AddNewDepterCommand}" HorizontalAlignment="Left" Margin="366,136,0,0" VerticalAlignment="Top" Width="74"/>
+            <Button Content="Add" Command="{Binding Path=AddNewDepterCommand}" Style="{StaticResource ResourceKey=BottonStyle}" HorizontalAlignment="Left" Margin="366,136,0,0" VerticalAlignment="Top" Width="74"/>
             <ListBox 
             Name="ListBoxForDepters" 
             ItemsSource="{Binding Path=Depters}"
@@ -38,7 +38,7 @@
             VerticalAlignment="Top" 
             Width="280"/>
             <Button Content="Edit" HorizontalAlignment="Left" Margin="607,136,0,0" VerticalAlignment="Top" Width="74" />
-            <Button Command="{Binding DeleteDepterCommand}" Content="Delete" HorizontalAlignment="Left" Margin="495,136,0,0" VerticalAlignment="Top" Width="75" />
+            <Button Command="{Binding DeleteDepterCommand}" Style="{StaticResource ResourceKey=BottonStyle}" Content="Delete" HorizontalAlignment="Left" Margin="495,136,0,0" VerticalAlignment="Top" Width="75" />
 
         </Grid>
     </DockPanel>

@@ -21,8 +21,8 @@
             <ColumnDefinition Width="300*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Content="Gem" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="70" Grid.Row="3" Grid.Column="1" Click="BtnGem_Click"  Command="{Binding Path=AddNewDepterCommand}"/>
-        <Button Content="Annulere" HorizontalAlignment="Center" VerticalAlignment="Top" Width="70" Grid.Row="3" Click="BtnAnnulere_Click" Grid.Column="1"/>
+        <Button Content="Gem" Style="{StaticResource ResourceKey=BottonStyle}" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="70" Grid.Row="3" Grid.Column="1" Click="BtnGem_Click"  Command="{Binding Path=AddNewDepterCommand}"/>
+        <Button Content="Annulere" Style="{StaticResource ResourceKey=BottonStyle}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="70" Grid.Row="3" Click="BtnAnnulere_Click" Grid.Column="1"/>
         <Label Content="Add depter"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
 
         <TextBox Name="txtB_Name" Text="{Binding Path= CurrentDepter.DepterName}" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Grid.ColumnSpan="2" Margin="63,86,0,0" Grid.RowSpan="2"/>
