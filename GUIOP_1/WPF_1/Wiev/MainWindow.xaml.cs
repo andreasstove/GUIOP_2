@@ -31,6 +31,9 @@ namespace WPF_1
             //ListBoxForDepters.Focus();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }
