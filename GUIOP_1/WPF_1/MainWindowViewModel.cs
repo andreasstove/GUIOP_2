@@ -20,7 +20,7 @@ namespace WPF_1
         string filePath = "";
         private string filename = "";
         public ObservableCollection<Depter> depters;
-         
+
         public MainWindowViewModel()
         {
             depters = new ObservableCollection<Depter>
@@ -60,9 +60,9 @@ namespace WPF_1
             {
                 SetProperty(ref depters, value);
             }
-            
+
         }
- 
+
 
         int currentIndex = -1;
         public int CurrentIndex
@@ -82,7 +82,7 @@ namespace WPF_1
 
         }
 
-   
+
         #endregion
 
         #region INotifyPropertyChanged implementation
@@ -123,16 +123,16 @@ namespace WPF_1
                      var vm = new DepterViewModel(newDepter);
                      var dlg = new AddCollecter();
                      dlg.DataContext = vm;
-                     if(dlg.ShowDialog() == true)
+                     if (dlg.ShowDialog() == true)
                      {
                          Depters.Add(newDepter);
                          CurrentDepter = newDepter;
                      }
-
                  }));
-                
             }
         }
+
+
         ICommand _SaveCommand;
         public ICommand SaveCommand
         {
