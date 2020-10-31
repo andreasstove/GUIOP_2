@@ -36,7 +36,7 @@
             Margin="35,57,6,6" 
             VerticalAlignment="Top" 
             Width="280"/>
-            <Button Content="Edit" HorizontalAlignment="Left" Margin="607,136,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+            <Button Content="Edit" HorizontalAlignment="Left" Margin="607,136,0,0" VerticalAlignment="Top" Width="74"/>
 
         </Grid>
     </DockPanel>
