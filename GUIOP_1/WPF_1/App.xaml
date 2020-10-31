@@ -13,6 +13,23 @@
                            Width="100"
                         />
             </WrapPanel>
-        </DataTemplate>    
+        </DataTemplate>
+
+        <Style x:Key="BottonStyle" TargetType="{x:Type Button}">
+            <Style.Setters>
+                <Setter Property="FontFamily" Value="Courier New" />
+                <Setter Property="Foreground" Value="Chocolate" />
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="Button.IsMouseOver" Value="True">
+                    <Setter Property="Effect" >
+                        <Setter.Value>
+                            <DropShadowEffect ShadowDepth="4" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
     </Application.Resources>
 </Application>
