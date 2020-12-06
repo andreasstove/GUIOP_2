@@ -13,6 +13,7 @@ using System.Windows.Controls;
 using Microsoft.Win32;
 using System.IO;
 using System.Windows;
+using WPF_1.wiev;
 namespace WPF_1
 {
     public class MainWindowViewModel : BindableBase
@@ -129,6 +130,29 @@ namespace WPF_1
                          CurrentDepter = newDepter;
                      }
                  }));
+            }
+        }
+
+        ICommand _detailsCommand;
+        public ICommand DetailsCommand
+        {
+            get
+            {
+                return _detailsCommand ?? (_detailsCommand = new DelegateCommand(() =>
+                {
+                    //var newDepter = new Depter();
+                    var vm = new DetailsViewModel(CurrentDepter);
+                    var dlg = new CollectorDetails();
+                    dlg.DataContext = vm;
+                    if (dlg.ShowDialog() == true)
+                    {
+                        depters.
+                        //Hvis der skal ske noget når vi saver eller anulerrer.
+
+                        //Depters.Add(newDepter);
+                        //CurrentDepter = newDepter;
+                    }
+                }));
             }
         }
 

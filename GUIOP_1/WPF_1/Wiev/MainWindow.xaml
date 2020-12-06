@@ -52,7 +52,8 @@
             <Button Command="{Binding DeleteDepterCommand}" Style="{StaticResource ResourceKey=BottonStyle}" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Grid.Row="1" Grid.Column="4" Click="Button_Click" Margin="0.2,0,0,0.4" />
             <Label Content="Navn" Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Bottom" Margin="53,0,52.8,125.4" Grid.RowSpan="2"/>
             <Label Content="Beløb" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Bottom" Margin="29.2,0,28.4,125.4" Grid.RowSpan="2"/>
-
+            <Button Content="Details" Command="{Binding Path=DetailsCommand}" Style="{StaticResource ResourceKey=BottonStyle}" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="2" VerticalAlignment="Bottom" Width="74" Margin="25,0,10,153"/>
         </Grid>
+
     </DockPanel>
 </Window>

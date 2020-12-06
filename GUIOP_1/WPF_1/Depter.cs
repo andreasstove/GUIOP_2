@@ -4,20 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Prism.Mvvm;
+using System.Windows;
+using System.Collections.ObjectModel;
+
 namespace WPF_1
 {
-    public class Depter
+    public class Depter : BindableBase
     {
         string depterName;
         double amount;
+        public ObservableCollection<Double> debits;
         public Depter()
         {
-
+            debits = new ObservableCollection<double>();
         }
         public Depter(string aDepterName, double aAmount)
         {
+            debits = new ObservableCollection<double>();
             depterName = aDepterName;
-            amount = aAmount;
+            Amount = aAmount;
+
         }
         public string DepterName
         {
@@ -39,7 +45,8 @@ namespace WPF_1
             }
             set
             {
-                amount = value;
+                amount =+ value;
+                debits.Add(value);
             }
         }
     }

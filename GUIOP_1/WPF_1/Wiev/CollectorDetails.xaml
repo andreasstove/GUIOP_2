@@ -3,14 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_1.wiev"
+        xmlns:local="clr-namespace:WPF_1"
         mc:Ignorable="d"
         Title="CollectorDetails" Height="450" Width="538">
+    <Window.DataContext>
+        <local:DetailsViewModel/>
+    </Window.DataContext>
     <Grid Margin="0,0,4,0">
-        <ListBox HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="260" RenderTransformOrigin="2.1,1.8" Margin="15,70,0,0"/>
-        <Button Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="325,260,0,0"/>
+        <ListBox HorizontalAlignment="Left" 
+                 Height="270" 
+                 VerticalAlignment="Top" 
+                 Width="260" 
+                 RenderTransformOrigin="2.1,1.8" 
+                 Margin="15,70,0,0"
+                 ItemsSource="{Binding Path=DebitsModel}"
+                 IsSynchronizedWithCurrentItem="True"
+                 
+                 />
+        <Button Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="325,260,0,0" Click="Button_Click"/>
         <Label Content="List for about debits" HorizontalAlignment="Left" Margin="15,39,0,0" VerticalAlignment="Top"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="430,260,0,0"/>
-        <Button Content="Add Dept" HorizontalAlignment="Left" Margin="325,100,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Add Dept" HorizontalAlignment="Left" Margin="325,100,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Path=AddCommand}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="325,70,0,00"
+                
+                 x:Name="NewDept"
+                 Text="{Binding Amount, Mode=TwoWay}"
+                 />
     </Grid>
 </Window>

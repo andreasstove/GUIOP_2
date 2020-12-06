@@ -87,6 +87,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DetailsViewModel.cs" />
     <Compile Include="Depter.cs" />
     <Compile Include="DepterViewModel.cs" />
     <Compile Include="MainWindowViewModel.cs" />

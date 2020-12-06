@@ -25,5 +25,7 @@ namespace WPF_1
             set => SetProperty(ref currentDepter, value);
         }
 
+
+
     }
 }
