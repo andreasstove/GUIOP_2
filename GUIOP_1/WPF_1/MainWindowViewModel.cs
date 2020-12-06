@@ -151,7 +151,7 @@ namespace WPF_1
                         var curr = CurrentDepter;
                         var amm = CurrentDepter.Amount;
                         Depters.Remove(CurrentDepter);
-                        curr.Amount = amm;
+                        //curr.Amount = amm;
                         Depters.Add(curr);
                         //CurrentDepter.Amount += vm.CurrentDepter.Amount;
                         //Debug.WriteLine(CurrentDepter.Amount);
