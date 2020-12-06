@@ -38,13 +38,13 @@ namespace WPF_1
         {
 
         }
-        Depter currentDepter;
+        private Depter currentDepter;
 
         
         public Depter CurrentDepter
         {
             get { return currentDepter; }
-            set => SetProperty(ref currentDepter, value);
+            private set => SetProperty(ref currentDepter, value);
         }
 
         ICommand _addCommand;
@@ -56,7 +56,6 @@ namespace WPF_1
                 return _addCommand ?? (_addCommand = new DelegateCommand(() =>
                 {
                     currentDepter.Amount = Convert.ToDouble(Amount);
-
                 }));
             }
 

@@ -14,6 +14,8 @@ using Microsoft.Win32;
 using System.IO;
 using System.Windows;
 using WPF_1.wiev;
+using System.Diagnostics;
+
 namespace WPF_1
 {
     public class MainWindowViewModel : BindableBase
@@ -132,7 +134,6 @@ namespace WPF_1
                  }));
             }
         }
-
         ICommand _detailsCommand;
         public ICommand DetailsCommand
         {
@@ -142,10 +143,19 @@ namespace WPF_1
                 {
                     //var newDepter = new Depter();
                     var vm = new DetailsViewModel(CurrentDepter);
+                    var mwvm = new MainWindowViewModel();
                     var dlg = new CollectorDetails();
                     dlg.DataContext = vm;
                     if (dlg.ShowDialog() == true)
                     {
+                        var curr = CurrentDepter;
+                        var amm = CurrentDepter.Amount;
+                        Depters.Remove(CurrentDepter);
+                        curr.Amount = amm;
+                        Depters.Add(curr);
+                        //CurrentDepter.Amount += vm.CurrentDepter.Amount;
+                        //Debug.WriteLine(CurrentDepter.Amount);
+                        
                         //depters.
                         //Hvis der skal ske noget når vi saver eller anulerrer.
 
