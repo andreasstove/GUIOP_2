@@ -42,9 +42,7 @@ namespace WPF_1
  
         
             DialogResult = true;
-            /*if ()
-                this.Close();
-                */
+
            
         }
 

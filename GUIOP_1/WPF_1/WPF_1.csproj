@@ -75,6 +75,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="wiev\CollectorDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="wiev\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +93,9 @@
     <Compile Include="Repository.cs" />
     <Compile Include="wiev\AddCollecter.xaml.cs">
       <DependentUpon>AddCollecter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wiev\CollectorDetails.xaml.cs">
+      <DependentUpon>CollectorDetails.xaml</DependentUpon>
     </Compile>
     <Compile Include="wiev\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
