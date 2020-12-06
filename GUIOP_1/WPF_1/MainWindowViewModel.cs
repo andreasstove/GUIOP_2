@@ -169,7 +169,7 @@ namespace WPF_1
         private void SaveAsCommand_Execute()
         {
             SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "Depter documens|*.agn|ALL Fles|*.*";
+            dialog.Filter = "Depter documens|*.dep|ALL Fles|*.*";
             if(filePath == "")
             {
                 dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -196,8 +196,8 @@ namespace WPF_1
         {
             var dialog = new OpenFileDialog();
 
-            dialog.Filter = "Depter documents|*.agn|All Files|*.*";
-            dialog.DefaultExt = "agn";
+            dialog.Filter = "Depter documents|*.dep|All Files|*.*";
+            dialog.DefaultExt = "dep";
             if (filePath == "")
             {
                 dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
