@@ -146,7 +146,7 @@ namespace WPF_1
                     dlg.DataContext = vm;
                     if (dlg.ShowDialog() == true)
                     {
-                        depters.
+                        //depters.
                         //Hvis der skal ske noget når vi saver eller anulerrer.
 
                         //Depters.Add(newDepter);
