@@ -20,13 +20,14 @@
                  IsSynchronizedWithCurrentItem="True"
                  
                  />
-        <Button Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="325,260,0,0" Click="Button_Click"/>
-        <Label Content="List for about debits" HorizontalAlignment="Left" Margin="15,39,0,0" VerticalAlignment="Top"/>
-        <Button Content="Add Dept" HorizontalAlignment="Left" Margin="325,100,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Path=AddCommand}"/>
+        <Button Content="Close" Style="{StaticResource ResourceKey=BottonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="325,260,0,0" Click="Button_Click"/>
+        <Label Content="List for debits" HorizontalAlignment="Left" Margin="15,39,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add Dept" Style="{StaticResource ResourceKey=BottonStyle}"  HorizontalAlignment="Left" Margin="325,100,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Path=AddCommand}"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="325,70,0,00"
                 
                  x:Name="NewDept"
                  Text="{Binding Amount, Mode=TwoWay}"
                  />
+        <Label Content="{Binding Path=CurrentDepter.DepterName}" HorizontalAlignment="Left" Margin="140,39,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
