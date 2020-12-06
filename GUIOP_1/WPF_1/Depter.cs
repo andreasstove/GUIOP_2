@@ -41,7 +41,7 @@ namespace WPF_1
         {
             get
             {
-                //double total = 0;
+                amount = 0;
                 foreach (var item in debits)
                 {
                     amount += item;
@@ -51,7 +51,7 @@ namespace WPF_1
             }
             set
             {
-                //amount =+ value;
+                amount += value;
                 debits.Add(value);
             }
         }
